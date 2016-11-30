@@ -1,0 +1,23 @@
+html {
+    background-color: black;
+}
+.body {
+    display: block;
+    background: black;
+}
+
+.header {
+    font-size: 25px;
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-family: helvetica;
+}
+
+.name {
+    float: left;
+    padding: 10px;
+}
+.main-nav {
+    display: inline-block;
+}
