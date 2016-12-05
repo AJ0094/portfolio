@@ -11,7 +11,7 @@ html {
     position: fixed;
     background-color: black;
     color: white;
-    font-family: helvetica;
+    font-family: 'Abel', sans-serif;
 }
 
 .name {
