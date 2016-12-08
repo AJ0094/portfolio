@@ -13,7 +13,8 @@ html {
     background: black;
 }
 
-.header {
+
+.header{
     font-size: 25px;
     position: fixed;
     background-color: black;
@@ -21,21 +22,19 @@ html {
     font-family: 'Abel', sans-serif;
 }
 
-.box {
-    max-width: 100%;
-    margin-bottom:3%;
-    white-space:nowrap;
-    
+.name a:hover {
+    opacity: .3;
+    transition:.3s;
 }
-
-
 
 .name a {
     float: left;
+    display: inline-block;
     padding: 10px;
     color:white;
     text-decoration: none;
 }
+
 .main-nav {
    position: fixed;
    top: 45px;
@@ -45,80 +44,102 @@ html {
    z-index: 1;
 }
 
+
 .main-nav a {
   color: white;
   text-decoration: none;
 }
 
-.navigation {
-    
+.main-nav a:hover {
+    opacity: .3;
+    transition:.3s;
+}
+
+h3{
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-top: 100px;
+    text-align: center;
+    color: white;
 }
 
 .about-me {
     font-family: 'Raleway', sans-serif;
+    font-size: 15px;
     color: maroon;
-    display: block;
-    padding-top: 200px;
-    margin-left:50px;
-    align-content: center;
+    width:50%;
+    float:left;
+    margin-top: 100px;
 }
 
-pictures {
-    width:700px;
-    height: 400px;
+
+.pictures {
+  display:inline-block;
+  width:100%;
+  text-align:left;
+  margin:auto;
+  margin-top:30px;
+  padding-bottom: 1em;
+  vertical-align: top;
 }
 
 img {
-    max-width: 90%;
-    vertical-align: bottom;
-    
+    max-width:400px;
+    margin: 5 5 5 5px;
+    vertical-align: top;
 }
 
 .contact {
-    display: inline-block; 
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
     color: white;
     text-align: center;
     margin-top: 200px;
+    margin-left: 100px;
     text-decoration: none;
 }
 
 
 /*-----------footer------------*/
+
+.main-footer {
+    position: relative;
+    height: 200px;
+}
+
+.clearfix{
+    overflow: auto;
+}
+
+img.icons {
+    max-width: 50px;
+    padding: 5px;
+    float: right;
+}
 .social {
-    max-width: 50%;
     position: absolute;
-    left: 90%;
+    left: 2.25em;
+    bottom: 1.5em;
     
-    top: 1.5em;
     
 }
 .social a {
-    display: block;
+    display: inline-block;
     max-width: 35px;
+    margin: 2px 2px 2px 2px;
 }
 
+.social a:hover{
+    opacity: .3;
+    transition:.3s;
+}
 /*=====================================
             Media Queries
   =====================================*/
+    @media only screen and (min-width:460px)
     @media only screen and (min-width:768px) {
-        
-        .container {
-            width: 100%;
-            margin:0;
-            padding-left: 1%;
-            padding-top: 1%;
-            padding-bottom: 5%;
-            display:grid;
-            clear:both;
-            
-        }
-        
-        .image{
-            width: 90%;
-            display:inline-grid;
-            
-        }
-        
+                
+    
        img:hover {
             opacity: .3;
             transition: .3s;
